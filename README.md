@@ -178,6 +178,38 @@ A fully interactive **Sales Performance Dashboard** was built in Power BI to pre
 - The dashboard reveals a healthy **profit margin of 24.74%**, indicating strong profitability relative to total sales.
 - Combining category, product, region, and city-level insights helps provide a complete view of overall business performance.
 
+# 🧮 Example SQL Queries
+
+The complete SQL analysis used in this project is available in:
+
+```text
+sql/sales_analysis_queries.sql
+```
+
+Below are a few sample queries used to calculate key business metrics.
+
+## 1) Total Revenue
+```sql
+SELECT ROUND(SUM(total_sales), 2) AS total_revenue
+FROM sales_data;
+```
+
+## 2) Profit Margin
+```sql
+SELECT ROUND((SUM(profit) / SUM(total_sales)) * 100, 2) AS profit_margin
+FROM sales_data;
+```
+
+## 3) Monthly Sales Trend
+```sql
+SELECT 
+    TO_CHAR(order_date, 'Mon YYYY') AS month_year,
+    ROUND(SUM(total_sales), 2) AS revenue
+FROM sales_data
+GROUP BY TO_CHAR(order_date, 'Mon YYYY'), DATE_TRUNC('month', order_date)
+ORDER BY DATE_TRUNC('month', order_date);
+```
+
 # 📁 Project Structure
 
 ```text

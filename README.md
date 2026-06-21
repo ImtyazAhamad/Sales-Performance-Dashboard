@@ -185,23 +185,23 @@ A fully interactive **Sales Performance Dashboard** was built in Power BI to pre
 SELECT ROUND(SUM(total_sales), 2) AS total_revenue
 FROM sales_data;
 
-## 2) Total Profit
+2) Total Profit
 SELECT ROUND(SUM(profit), 2) AS total_profit
 FROM sales_data;
 
-## 3) Total Order
+3) Total Order
 SELECT COUNT(DISTINCT order_id) AS total_orders
 FROM sales_data;
 
-## 4) Quantity Sold
+4) Quantity Sold
 SELECT SUM(quantity) AS quantity_sold
 FROM sales_data;
 
-## 5) Profit_Margin
+5) Profit_Margin
 SELECT ROUND((SUM(profit) / SUM(total_sales)) * 100, 2) AS profit_margin
 FROM sales_data;
 
-## 6) Monthly_Sales_Trends
+6) Monthly_Sales_Trends
 SELECT 
     TO_CHAR(order_date, 'Mon YYYY') AS month_year,
     ROUND(SUM(total_sales), 2) AS revenue

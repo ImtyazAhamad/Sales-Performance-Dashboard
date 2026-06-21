@@ -247,10 +247,9 @@ sales-performance-dashboard-powerbi-sql-python/
 
 This project demonstrates a complete end-to-end data analytics workflow using Python, SQL, and Power BI.
 
-Through this project, raw sales data was transformed into meaningful business insights by:
-
-cleaning and preparing the dataset using Python
-performing exploratory analysis to identify trends and patterns
-writing SQL queries to answer key business questions and validate KPIs
-building an interactive Power BI dashboard to track revenue, profit, orders, product performance, regional contribution, and monthly sales trends
+**Through this project, raw sales data was transformed into meaningful business insights by:**
+- Cleaning and preparing the dataset using Python
+- Performing exploratory analysis to identify trends and patterns
+- Writing SQL queries to answer key business questions and validate KPIs
+- Building an interactive Power BI dashboard to track revenue, profit, orders, product performance, regional contribution, and monthly sales trends
 

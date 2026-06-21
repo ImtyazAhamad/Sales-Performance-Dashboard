@@ -194,13 +194,30 @@ SELECT ROUND(SUM(total_sales), 2) AS total_revenue
 FROM sales_data;
 ```
 
-## 2) Profit Margin
+## 2) Total Profit
+```sql
+SELECT ROUND(SUM(profit),2) AS total_profit FROM sales_data;
+```
+
+## 3) Total Orders
+```sql
+SELECT COUNT(*) AS total_orders
+FROM sales_data;
+```
+
+## 4) Quantity Sold
+```sql
+SELECT SUM(quantity) AS quantity_sold
+FROM sales_data;
+```
+
+## 5) Profit Margin
 ```sql
 SELECT ROUND((SUM(profit) / SUM(total_sales)) * 100, 2) AS profit_margin
 FROM sales_data;
 ```
 
-## 3) Monthly Sales Trend
+## 6) Monthly Sales Trend
 ```sql
 SELECT 
     TO_CHAR(order_date, 'Mon YYYY') AS month_year,

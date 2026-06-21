@@ -206,12 +206,3 @@ performing exploratory analysis to identify trends and patterns
 writing SQL queries to answer key business questions and validate KPIs
 building an interactive Power BI dashboard to track revenue, profit, orders, product performance, regional contribution, and monthly sales trends
 
-The final dashboard provides a clear view of overall sales performance and helps support data-driven decision-making through visual reporting and business insights.
-
-This project highlights practical skills in:
-
-data cleaning and preprocessing
-exploratory data analysis
-SQL-based business analysis
-KPI development
-dashboard design and data storytelling in Power BI

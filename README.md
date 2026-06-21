@@ -194,7 +194,7 @@ sales-performance-dashboard-powerbi-sql-python/
 └── README.md
 ```
 
-🚀 Project Outcome
+🚀 **Project Outcome**
 
 This project demonstrates a complete end-to-end data analytics workflow using Python, SQL, and Power BI.
 

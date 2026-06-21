@@ -188,32 +188,23 @@ FROM sales_data;
 2) Total Profit
 SELECT ROUND(SUM(profit), 2) AS total_profit
 FROM sales_data;
-
-3) Total Order
+3) Total Orders
 SELECT COUNT(DISTINCT order_id) AS total_orders
 FROM sales_data;
-
 4) Quantity Sold
 SELECT SUM(quantity) AS quantity_sold
 FROM sales_data;
-
-5) Profit_Margin
+5) Profit Margin
 SELECT ROUND((SUM(profit) / SUM(total_sales)) * 100, 2) AS profit_margin
 FROM sales_data;
-
-6) Monthly_Sales_Trends
+6) Monthly Sales Trend
 SELECT 
     TO_CHAR(order_date, 'Mon YYYY') AS month_year,
     ROUND(SUM(total_sales), 2) AS revenue
 FROM sales_data
 GROUP BY TO_CHAR(order_date, 'Mon YYYY'), DATE_TRUNC('month', order_date)
 ORDER BY DATE_TRUNC('month', order_date);
-
----
-
-# 📁 Project Structure
-
-```bash
+📁 Project Structure
 sales-performance-dashboard-powerbi-sql-python/
 │
 ├── data/
@@ -230,24 +221,23 @@ sales-performance-dashboard-powerbi-sql-python/
 │
 ├── dashboard_screenshot.png
 └── README.md
+🚀 Project Outcome
 
-# 🚀 Project Outcome
-
-This project demonstrates a complete **end-to-end data analytics workflow** using **Python, SQL, and Power BI**.
+This project demonstrates a complete end-to-end data analytics workflow using Python, SQL, and Power BI.
 
 Through this project, raw sales data was transformed into meaningful business insights by:
-- cleaning and preparing the dataset using **Python**
-- performing exploratory analysis to identify trends and patterns
-- writing **SQL queries** to answer key business questions and validate KPIs
-- building an interactive **Power BI dashboard** to track revenue, profit, orders, product performance, regional contribution, and monthly sales trends
 
-The final dashboard provides a clear view of overall sales performance and helps support **data-driven decision-making** through visual reporting and business insights.
+cleaning and preparing the dataset using Python
+performing exploratory analysis to identify trends and patterns
+writing SQL queries to answer key business questions and validate KPIs
+building an interactive Power BI dashboard to track revenue, profit, orders, product performance, regional contribution, and monthly sales trends
+
+The final dashboard provides a clear view of overall sales performance and helps support data-driven decision-making through visual reporting and business insights.
 
 This project highlights practical skills in:
-- **data cleaning and preprocessing**
-- **exploratory data analysis**
-- **SQL-based business analysis**
-- **KPI development**
-- **dashboard design and data storytelling in Power BI**
 
-Overall, this project serves as a strong **portfolio project for Data Analyst, MIS, Reporting, and Power BI roles**, showcasing the ability to work across the full analytics pipeline from raw data to final dashboard reporting.
+data cleaning and preprocessing
+exploratory data analysis
+SQL-based business analysis
+KPI development
+dashboard design and data storytelling in Power BI

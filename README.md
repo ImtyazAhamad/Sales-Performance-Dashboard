@@ -178,23 +178,22 @@ A fully interactive **Sales Performance Dashboard** was built in Power BI to pre
 - The dashboard reveals a healthy **profit margin of 24.74%**, indicating strong profitability relative to total sales.
 - Combining category, product, region, and city-level insights helps provide a complete view of overall business performance.
 
-📁 Project Structure
+# 📁 Project Structure
+
+```text
 sales-performance-dashboard-powerbi-sql-python/
-│
 ├── data/
 │   └── sales_data.csv
-│
 ├── python/
 │   └── sales_data_cleaning_eda.ipynb
-│
 ├── sql/
 │   └── sales_analysis_queries.sql
-│
 ├── powerbi/
 │   └── Sales_Performance_Dashboard.pbix
-│
 ├── dashboard_screenshot.png
 └── README.md
+```
+
 🚀 Project Outcome
 
 This project demonstrates a complete end-to-end data analytics workflow using Python, SQL, and Power BI.
